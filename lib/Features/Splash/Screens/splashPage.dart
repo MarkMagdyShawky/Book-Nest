@@ -1,9 +1,7 @@
-import 'package:book_nest/Core/Resources/colorManager.dart';
-import 'package:book_nest/Core/Resources/imageManager.dart';
-import 'package:book_nest/Core/Resources/pageDimensions.dart';
-import 'package:book_nest/Core/Resources/routeManager.dart';
+import 'package:book_nest/Features/Home/Screens/homePage.dart';
 import 'package:book_nest/Features/Splash/Widgets/splashPageBody.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -15,21 +13,33 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    // change page after 4 sec
-    // Future.delayed(
-    //   const Duration(seconds: 4),
-    //   () {
-    //     print("replaceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
-    //     Navigator.pushReplacementNamed(context, RoutesName.kHomePage);
-    //   },
-    // );
     super.initState();
+    NavigateHome();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SplashPageBody(),
+    );
+  }
+
+  void NavigateHome() {
+    Future.delayed(
+      const Duration(seconds: 3),
+      () {
+        // Using GetX
+        Get.to(
+          () => const HomePage(),
+          transition: Transition.rightToLeftWithFade,
+          // duration: kTransitionDiration,
+        );
+      },
     );
   }
 }
