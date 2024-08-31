@@ -18,11 +18,14 @@ class _SplashPageBodyState extends State<SplashPageBody> with SingleTickerProvid
 
   @override
   void initState() {
-    animationController = AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    slidingAnimation =
-        Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero).animate(animationController);
-    animationController.forward();
+    SlidingAnimationHelper();
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    animationController.dispose();
   }
 
   @override
@@ -44,5 +47,12 @@ class _SplashPageBodyState extends State<SplashPageBody> with SingleTickerProvid
         ],
       ),
     );
+  }
+
+  void SlidingAnimationHelper() {
+    animationController = AnimationController(vsync: this, duration: const Duration(seconds: 2));
+    slidingAnimation =
+        Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero).animate(animationController);
+    animationController.forward();
   }
 }

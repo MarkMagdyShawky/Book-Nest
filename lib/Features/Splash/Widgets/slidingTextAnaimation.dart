@@ -1,3 +1,4 @@
+import 'package:book_nest/Core/Resources/fontManager.dart';
 import 'package:flutter/material.dart';
 
 class SlidingTextAnimation extends StatelessWidget {
@@ -15,10 +16,7 @@ class SlidingTextAnimation extends StatelessWidget {
         builder: (context, _) {
           return SlideTransition(
             position: slidingAnimation,
-            child: Text(
-              "Book Nest",
-              style: const TextStyle(fontFamily: "NerkoOne", fontSize: 50),
-            ),
+            child: FontManager().LogoText(),
           );
         });
   }
