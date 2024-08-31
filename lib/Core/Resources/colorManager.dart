@@ -1,4 +1,6 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
-const Color kPrimaryColor = Color(0xff2e0049);
-const Color kSecondColor = Color(0xff6100a1);
+// 100B20
+const Color kPrimaryColor = Color(0xff100B20);
+const Color kSecondColor = Color(0xFF2F004E);
+const Color kFonstColor = Color(0xffffffff);

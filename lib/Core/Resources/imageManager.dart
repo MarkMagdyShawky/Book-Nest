@@ -1,3 +1,3 @@
-class ImageManger{
-  static const String logoImage = "assets/images/icons/spider.png";
+class ImageManger {
+  static const String logoImage = "assets/images/icons/magicBook.png";
 }
