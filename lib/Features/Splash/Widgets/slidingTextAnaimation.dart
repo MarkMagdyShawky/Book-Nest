@@ -16,7 +16,7 @@ class SlidingTextAnimation extends StatelessWidget {
         builder: (context, _) {
           return SlideTransition(
             position: slidingAnimation,
-            child: FontManager().LogoText(),
+            child: FontManager().LogoText(50),
           );
         });
   }

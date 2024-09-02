@@ -36,7 +36,7 @@ class _SplashPageState extends State<SplashPage> {
         // Using GetX
         Get.to(
           () => const HomePage(),
-          transition: Transition.rightToLeftWithFade,
+          transition: Transition.fadeIn,
           // duration: kTransitionDiration,
         );
       },
