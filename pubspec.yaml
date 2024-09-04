@@ -33,6 +33,7 @@ dependencies:
     sdk: flutter
   font_awesome_flutter: ^10.7.0
   get: ^4.6.6
+  google_fonts: ^6.2.0
 
 dev_dependencies:
   flutter_launcher_icons: "^0.13.1"
@@ -95,6 +96,11 @@ flutter:
     - family: Montserrat
       fonts:
         - asset: assets/fonts/Montserrat.ttf
+    #       - asset: fonts/TrajanPro_Bold.ttf
+    #         weight: 700
+    - family: GTSectraFine
+      fonts:
+        - asset: assets/fonts/GTSectraFine.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
