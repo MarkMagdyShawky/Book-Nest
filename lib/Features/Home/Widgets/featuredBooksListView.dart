@@ -9,9 +9,10 @@ class FreaturedBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: PageDimensions().pageHeight(context) * 0.29,
+      height: PageDimensions().pageHeight(context) * 0.26,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
+        itemCount: 10,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(right: 20.0),
