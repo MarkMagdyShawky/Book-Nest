@@ -1,4 +1,4 @@
-import 'package:book_nest/Features/Home/Widgets/featuredListItem.dart';
+import 'package:book_nest/Features/Home/Widgets/custom_image_item.dart';
 import 'package:flutter/material.dart';
 
 import '../../../Core/Resources/pageDimensions.dart';
@@ -16,7 +16,7 @@ class FreaturedBooksListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(right: 20.0),
-            child: FeaturedListItem(),
+            child: CustomImageItem(),
           );
         },
       ),

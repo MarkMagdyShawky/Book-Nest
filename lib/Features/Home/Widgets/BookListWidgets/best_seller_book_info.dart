@@ -31,7 +31,9 @@ class BestSellerBookDetails extends StatelessWidget {
                 "19.15 \$",
                 style: Styles.textStyle20.copyWith(fontWeight: FontWeight.w900, fontFamily: kMontserrat),
               ),
-              RationgWidgets(),
+              RationgWidgets(
+                mainAxisAlignment: MainAxisAlignment.start,
+              ),
             ],
           )
         ],

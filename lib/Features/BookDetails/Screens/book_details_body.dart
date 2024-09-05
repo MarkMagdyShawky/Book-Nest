@@ -38,7 +38,9 @@ class BookDetailsBody extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 10),
-          RationgWidgets(),
+          RationgWidgets(
+            mainAxisAlignment: MainAxisAlignment.center,
+          ),
         ],
       ),
     );
