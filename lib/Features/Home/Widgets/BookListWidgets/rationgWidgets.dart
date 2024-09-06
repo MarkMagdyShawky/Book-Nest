@@ -25,7 +25,7 @@ class RationgWidgets extends StatelessWidget {
         const SizedBox(width: 6),
         Text(
           "(2390)",
-          style: Styles.textStyle14.copyWith(color: kFonstColor2),
+          style: Styles.textStyle14.copyWith(color: kWhiteColor2),
         ),
       ],
     );
