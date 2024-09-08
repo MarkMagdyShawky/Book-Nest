@@ -1,4 +1,4 @@
-import 'package:book_nest/Core/Resources/constans.dart';
+import 'package:book_nest/Core/Resources/constants.dart';
 import 'package:book_nest/Core/Resources/styles.dart';
 import 'package:flutter/material.dart';
 import '../Widgets/BookListWidgets/best_seller_list_view.dart';

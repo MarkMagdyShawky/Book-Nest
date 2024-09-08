@@ -1,4 +1,4 @@
-import 'package:book_nest/Core/Resources/constans.dart';
+import 'package:book_nest/Core/Resources/constants.dart';
 import 'package:flutter/material.dart';
 
 class FontManager {
