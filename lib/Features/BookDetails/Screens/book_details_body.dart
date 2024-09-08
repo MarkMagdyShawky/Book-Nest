@@ -1,10 +1,4 @@
-import 'package:book_nest/Core/Resources/colorManager.dart';
-import 'package:book_nest/Core/Resources/pageDimensions.dart';
-import 'package:book_nest/Core/Resources/styles.dart';
 import 'package:book_nest/Features/BookDetails/Widgets/custom_book_details_appBar.dart';
-import 'package:book_nest/Features/BookDetails/Widgets/similer_boos_list_view.dart';
-import 'package:book_nest/Features/Home/Widgets/BookListWidgets/rationgWidgets.dart';
-import 'package:book_nest/Features/Home/Widgets/custom_image_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../Widgets/book_actions.dart';
@@ -27,7 +21,7 @@ class BookDetailsBody extends StatelessWidget {
                 const CustomBookDetailsAppBar(),
                 BookDetailsSection(),
                 const SizedBox(height: 30),
-                // Book Actions (btns)
+                // Book Actions (btn)
                 BookActions(),
                 const Expanded(
                   child: SizedBox(height: 50),
@@ -41,4 +35,3 @@ class BookDetailsBody extends StatelessWidget {
     );
   }
 }
-
