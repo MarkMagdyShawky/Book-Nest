@@ -1,20 +1,21 @@
-import 'package:book_nest/Core/Resources/pageDimensions.dart';
-import 'package:book_nest/Features/Home/Widgets/custom_image_item.dart';
+import 'package:book_nest/Features/Home/Presentation/Widgets/custom_image_item.dart';
 import 'package:flutter/material.dart';
 
-class SimilerBooksListView extends StatelessWidget {
-  const SimilerBooksListView({super.key});
+import '../../../../Core/Resources/pageDimensions.dart';
+
+class FreaturedBooksListView extends StatelessWidget {
+  const FreaturedBooksListView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: PageDimensions().pageHeight(context) * .166,
+      height: PageDimensions().pageHeight(context) * 0.26,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: 10,
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.only(right: 10),
+            padding: const EdgeInsets.only(right: 20.0),
             child: CustomImageItem(),
           );
         },

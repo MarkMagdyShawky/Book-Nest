@@ -1,6 +1,6 @@
-import 'package:book_nest/Features/BookDetails/Screens/book_details_page.dart';
-import 'package:book_nest/Features/Home/Screens/homePage.dart';
-import 'package:book_nest/Features/Search/Screens/search_page.dart';
+import 'package:book_nest/Features/BookDetails/Presentation/Screens/book_details_page.dart';
+import 'package:book_nest/Features/Home/Presentation/Screens/homePage.dart';
+import 'package:book_nest/Features/Search/Presentation/Screens/search_page.dart';
 import 'package:book_nest/Features/Splash/Screens/splashPage.dart';
 import 'package:flutter/cupertino.dart';
 

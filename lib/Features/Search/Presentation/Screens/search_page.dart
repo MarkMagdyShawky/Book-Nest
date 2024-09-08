@@ -1,4 +1,4 @@
-import 'package:book_nest/Features/Search/Screens/search_page_body.dart';
+import 'package:book_nest/Features/Search/Presentation/Screens/search_page_body.dart';
 import 'package:flutter/material.dart';
 
 class SearchPage extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../Core/Resources/colorManager.dart';
-import '../../../Core/Widgets/custom_button.dart';
+import '../../../../Core/Resources/colorManager.dart';
+import '../../../../Core/Widgets/custom_button.dart';
 
 class BookActions extends StatelessWidget {
   const BookActions({super.key});
