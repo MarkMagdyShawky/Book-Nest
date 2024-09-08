@@ -1,4 +1,4 @@
-import 'package:book_nest/Core/Resources/gradientBackground.dart';
+import 'package:book_nest/Core/Widgets/custom_box_decoration.dart';
 import 'package:book_nest/Core/Resources/imageManager.dart';
 import 'package:book_nest/Core/Resources/pageDimensions.dart';
 import 'package:book_nest/Features/Splash/Widgets/slidingTextAnaimation.dart';
@@ -33,7 +33,7 @@ class _SplashPageBodyState extends State<SplashPageBody> with SingleTickerProvid
     return Container(
       width: PageDimensions().pageWidth(context),
       height: PageDimensions().pageHeight(context),
-      decoration: GradientBackground().boxDecoration(),
+      decoration: CustomBoxDecoration().gradientBgBoxDecoration(),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,

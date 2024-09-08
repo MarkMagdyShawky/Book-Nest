@@ -1,4 +1,5 @@
 import 'package:book_nest/Core/Resources/fontManager.dart';
+import 'package:book_nest/Core/Resources/routeManager.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -16,10 +17,12 @@ class CustomAppBar extends StatelessWidget {
         children: <Widget>[
           FontManager().LogoText(38),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(RoutesName.kSearchPage);
+            },
             icon: Icon(
               FontAwesomeIcons.magnifyingGlass,
-              size: 30,
+              size: 23,
             ),
           ),
         ],

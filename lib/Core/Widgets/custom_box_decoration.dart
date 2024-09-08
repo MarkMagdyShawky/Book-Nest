@@ -1,8 +1,8 @@
 import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:flutter/material.dart';
 
-class GradientBackground {
-  BoxDecoration boxDecoration() {
+class CustomBoxDecoration {
+  BoxDecoration gradientBgBoxDecoration() {
     return BoxDecoration(
       gradient: LinearGradient(
         colors: [
