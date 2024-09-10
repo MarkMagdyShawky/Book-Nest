@@ -1,7 +1,7 @@
 import 'package:book_nest/Features/BookDetails/Presentation/Screens/book_details_page.dart';
 import 'package:book_nest/Features/Home/Presentation/Views/Screens/homePage.dart';
 import 'package:book_nest/Features/Search/Presentation/Views/Screens/search_page.dart';
-import 'package:book_nest/Features/Splash/Screens/splashPage.dart';
+import 'package:book_nest/Features/Splash/Presentation/Views/Screens/splashPage.dart';
 import 'package:flutter/cupertino.dart';
 
 class RouteManager {
