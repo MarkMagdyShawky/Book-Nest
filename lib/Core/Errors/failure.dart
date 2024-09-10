@@ -1,11 +1,13 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:dio/dio.dart';
 
-abstract class Failure {}
+abstract class Failure {
+  final String errorMessage;
+  Failure(this.errorMessage);
+}
 
 class ServerFailure extends Failure {
-  final String errorMessage;
-  ServerFailure(this.errorMessage);
+  ServerFailure(super.errorMessage);
 
   factory ServerFailure.fromDioError(DioException dioException) {
     switch (dioException.type) {
