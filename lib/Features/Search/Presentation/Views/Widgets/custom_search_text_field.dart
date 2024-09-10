@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../../../Core/Resources/colorManager.dart';
-import '../../../../Core/Resources/styles.dart';
-import '../../../../Core/Widgets/custom_box_decoration.dart';
+import '../../../../../Core/Resources/colorManager.dart';
+import '../../../../../Core/Resources/styles.dart';
+import '../../../../../Core/Widgets/custom_box_decoration.dart';
 
 class CustomSearchTextField extends StatelessWidget {
   const CustomSearchTextField({super.key});
@@ -11,16 +11,14 @@ class CustomSearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: CustomBoxDecoration()
-          .gradientBgBoxDecoration()
-          .copyWith(borderRadius: BorderRadius.circular(16)),
+      decoration:
+          CustomBoxDecoration().gradientBgBoxDecoration().copyWith(borderRadius: BorderRadius.circular(16)),
       child: TextField(
         decoration: InputDecoration(
           hintText: "Search",
           hintStyle: Styles.textStyle18,
-          enabledBorder:buildOutlineInputBorder(),
+          enabledBorder: buildOutlineInputBorder(),
           focusedBorder: buildOutlineInputBorder(),
-
           suffixIcon: Icon(
             FontAwesomeIcons.magnifyingGlass,
             size: 20,
@@ -29,8 +27,8 @@ class CustomSearchTextField extends StatelessWidget {
       ),
     );
   }
-  OutlineInputBorder buildOutlineInputBorder()
-  {
+
+  OutlineInputBorder buildOutlineInputBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(16),
       borderSide: BorderSide(
@@ -39,4 +37,3 @@ class CustomSearchTextField extends StatelessWidget {
     );
   }
 }
-

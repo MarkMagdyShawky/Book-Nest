@@ -1,5 +1,5 @@
-import 'package:book_nest/Features/Home/Presentation/Screens/homePage.dart';
-import 'package:book_nest/Features/Splash/Widgets/splashPageBody.dart';
+import 'package:book_nest/Features/Home/Presentation/Views/Screens/homePage.dart';
+import 'package:book_nest/Features/Splash/Presentation/Views/Widgets/splashPageBody.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

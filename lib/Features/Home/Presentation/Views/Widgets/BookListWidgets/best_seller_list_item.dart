@@ -1,8 +1,8 @@
 import 'package:book_nest/Core/Resources/routeManager.dart';
-import 'package:book_nest/Features/Home/Presentation/Widgets/BookListWidgets/best_seller_book_info.dart';
+import 'package:book_nest/Features/Home/Presentation/Views/Widgets/BookListWidgets/best_seller_book_info.dart';
 import 'package:flutter/material.dart';
-import '../../../../../Core/Resources/imageManager.dart';
-import '../../../../../Core/Resources/pageDimensions.dart';
+import '../../../../../../Core/Resources/imageManager.dart';
+import '../../../../../../Core/Resources/pageDimensions.dart';
 
 class BestSellerListItem extends StatelessWidget {
   const BestSellerListItem({super.key});

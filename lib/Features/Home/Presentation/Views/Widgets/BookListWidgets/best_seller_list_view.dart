@@ -1,4 +1,4 @@
-import 'package:book_nest/Features/Home/Presentation/Widgets/BookListWidgets/best_seller_list_item.dart';
+import 'package:book_nest/Features/Home/Presentation/Views/Widgets/BookListWidgets/best_seller_list_item.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerListView extends StatelessWidget {

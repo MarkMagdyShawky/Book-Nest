@@ -1,6 +1,6 @@
 import 'package:book_nest/Core/Resources/pageDimensions.dart';
 import 'package:flutter/material.dart';
-import '../../../Home/Presentation/Widgets/custom_image_item.dart';
+import '../../../Home/Presentation/Views/Widgets/custom_image_item.dart';
 
 class SimilerBooksListView extends StatelessWidget {
   const SimilerBooksListView({super.key});

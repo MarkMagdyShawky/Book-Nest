@@ -1,7 +1,7 @@
-import 'package:book_nest/Features/Home/Presentation/Widgets/custom_image_item.dart';
+import 'package:book_nest/Features/Home/Presentation/Views/Widgets/custom_image_item.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../Core/Resources/pageDimensions.dart';
+import '../../../../../Core/Resources/pageDimensions.dart';
 
 class FreaturedBooksListView extends StatelessWidget {
   const FreaturedBooksListView({super.key});

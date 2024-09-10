@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../../../../Core/Resources/colorManager.dart';
 import '../../../../Core/Resources/pageDimensions.dart';
 import '../../../../Core/Resources/styles.dart';
-import '../../../Home/Presentation/Widgets/BookListWidgets/rationgWidgets.dart';
-import '../../../Home/Presentation/Widgets/custom_image_item.dart';
+import '../../../Home/Presentation/Views/Widgets/BookListWidgets/rationgWidgets.dart';
+import '../../../Home/Presentation/Views/Widgets/custom_image_item.dart';
 
 class BookDetailsSection extends StatelessWidget {
   const BookDetailsSection({super.key});

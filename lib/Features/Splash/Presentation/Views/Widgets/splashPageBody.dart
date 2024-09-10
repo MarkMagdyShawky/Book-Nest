@@ -1,7 +1,7 @@
 import 'package:book_nest/Core/Widgets/custom_box_decoration.dart';
 import 'package:book_nest/Core/Resources/imageManager.dart';
 import 'package:book_nest/Core/Resources/pageDimensions.dart';
-import 'package:book_nest/Features/Splash/Widgets/slidingTextAnaimation.dart';
+import 'package:book_nest/Features/Splash/Presentation/Views/Widgets/slidingTextAnaimation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

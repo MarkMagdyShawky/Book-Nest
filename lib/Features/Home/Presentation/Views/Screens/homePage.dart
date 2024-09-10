@@ -1,4 +1,4 @@
-import 'package:book_nest/Features/Home/Presentation/Screens/homeBodyView.dart';
+import 'package:book_nest/Features/Home/Presentation/Views/Screens/homeBodyView.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

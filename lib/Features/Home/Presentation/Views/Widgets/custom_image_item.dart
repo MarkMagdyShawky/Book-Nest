@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../Core/Resources/imageManager.dart';
+import '../../../../../Core/Resources/imageManager.dart';
 
 class CustomImageItem extends StatelessWidget {
   const CustomImageItem({super.key});
