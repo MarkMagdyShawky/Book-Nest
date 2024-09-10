@@ -1,5 +1,5 @@
 import 'package:book_nest/Core/Resources/routeManager.dart';
-import 'package:book_nest/Features/Home/Presentation/Views/Widgets/BookListWidgets/best_seller_book_info.dart';
+import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_book_info.dart';
 import 'package:flutter/material.dart';
 import '../../../../../../Core/Resources/imageManager.dart';
 import '../../../../../../Core/Resources/pageDimensions.dart';

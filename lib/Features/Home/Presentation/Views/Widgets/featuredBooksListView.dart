@@ -1,4 +1,4 @@
-import 'package:book_nest/Features/Home/Presentation/Views/Widgets/custom_image_item.dart';
+import 'package:book_nest/Features/Home/presentation/Views/Widgets/custom_image_item.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../Core/Resources/pageDimensions.dart';

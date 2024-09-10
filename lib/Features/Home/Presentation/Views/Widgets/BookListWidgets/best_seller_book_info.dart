@@ -1,6 +1,6 @@
 import 'package:book_nest/Core/Resources/constants.dart';
 import 'package:book_nest/Core/Resources/styles.dart';
-import 'package:book_nest/Features/Home/Presentation/Views/Widgets/BookListWidgets/rationgWidgets.dart';
+import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/rationgWidgets.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerBookDetails extends StatelessWidget {
