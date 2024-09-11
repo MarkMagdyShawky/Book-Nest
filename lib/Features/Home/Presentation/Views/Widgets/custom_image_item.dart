@@ -1,19 +1,19 @@
+import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:flutter/material.dart';
-import '../../../../../Core/Resources/imageManager.dart';
 
 class CustomImageItem extends StatelessWidget {
-  const CustomImageItem({super.key});
-
+  final String imageURL;
+  const CustomImageItem({super.key, required this.imageURL});
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: 2.6 / 4,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.green,
+          color: kSecondColor,
           borderRadius: BorderRadius.circular(20),
-          image: const DecorationImage(
-            image: AssetImage(ImageManger.Image1),
+          image: DecorationImage(
+            image: NetworkImage(imageURL),
             fit: BoxFit.fill,
           ),
         ),

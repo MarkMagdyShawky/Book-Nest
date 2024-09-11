@@ -19,11 +19,13 @@ class FreaturedBooksListView extends StatelessWidget {
             height: PageDimensions().pageHeight(context) * 0.26,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: 10,
+              itemCount: state.books.length,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.only(right: 20.0),
-                  child: CustomImageItem(),
+                  child: CustomImageItem(
+                    imageURL: state.books[index].volumeInfo.imageLinks.thumbnail,
+                  ),
                 );
               },
             ),
