@@ -1,7 +1,6 @@
-import 'package:book_nest/Features/Home/Presentation/Views/Screens/homePage.dart';
+import 'package:book_nest/Core/Resources/routeManager.dart';
 import 'package:book_nest/Features/Splash/Presentation/Views/Widgets/splashPageBody.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -33,12 +32,13 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(
       const Duration(seconds: 3),
       () {
+        Navigator.popAndPushNamed(context, RoutesName.kHomePage);
         // Using GetX
-        Get.to(
-          () => const HomePage(),
-          transition: Transition.fadeIn,
-          // duration: kTransitionDiration,
-        );
+        // Get.to(
+        //   () => const HomePage(),
+        //   transition: Transition.fadeIn,
+        //   // duration: kTransitionDiration,
+        // );
       },
     );
   }

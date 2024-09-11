@@ -6,7 +6,8 @@ import 'package:book_nest/Features/Home/Data/Repos/home_repo.dart';
 import 'package:dio/dio.dart';
 
 class HomeRepoImpl implements HomeRepo {
-  ApiService apiService;
+  final ApiService apiService;
+
   HomeRepoImpl(this.apiService);
 
   @override
@@ -14,32 +15,59 @@ class HomeRepoImpl implements HomeRepo {
     try {
       var data = await apiService.get(endPoint: 'volumes?q=subject:programming&Sorting=Newest');
       List<BookModel> books = [];
-      for (var item in data['item']) {
-        books.add(BookModel.fromJson(item));
+
+      for (var item in data['items']) {
+        try {
+          books.add(BookModel.fromJson(item));
+        } catch (e) {
+          books.add(BookModel.fromJson(item));
+        }
       }
+
       return right(books);
+    } on DioException catch (e) {
+      return left(ServerFailure.fromDioExeption(e));
     } catch (e) {
-      if (e is DioException) {
-        return left(ServerFailure.fromDioError(e));
-      }
-      return left(ServerFailure(e.toString()));
+      return left(ServerFailure(errorMessage: e.toString()));
     }
   }
+
+//   @override
+//   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
+//     try {
+//       var data = await apiService.get(endPoint: 'volumes?q=subject:programming');
+//       List<BookModel> books = [];
+//       for (var item in data['item']) {
+//         books.add(BookModel.fromJson(item));
+//       }
+//       return right(books);
+//     } catch (e) {
+//       if (e is DioException) {
+//         return left(
+//           ServerFailure.fromDioError(e),
+//         );
+//       }
+//       return left(ServerFailure(
+//         e.toString(),
+//       ));
+//     }
+//   }
+// }
 
   @override
   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
     try {
-      var data = await apiService.get(endPoint: 'volumes?q=subject:programming');
+      var data = await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&q=subject:Programming');
       List<BookModel> books = [];
-      for (var item in data['item']) {
+      for (var item in data['items']) {
         books.add(BookModel.fromJson(item));
       }
+
       return right(books);
+    } on DioException catch (e) {
+      return left(ServerFailure.fromDioExeption(e));
     } catch (e) {
-      if (e is DioException) {
-        return left(ServerFailure.fromDioError(e));
-      }
-      return left(ServerFailure(e.toString()));
+      return left(ServerFailure(errorMessage: e.toString()));
     }
   }
 }

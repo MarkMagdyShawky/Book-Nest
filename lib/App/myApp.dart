@@ -1,6 +1,11 @@
 import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:book_nest/Core/Resources/routeManager.dart';
+import 'package:book_nest/Core/Utils/service_locator.dart';
+import 'package:book_nest/Features/Home/Data/Repos/home_repo_imp.dart';
+import 'package:book_nest/Features/Home/Presentation/manager/featured_books_cubit/featured_books_cubit.dart';
+import 'package:book_nest/Features/Home/Presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -9,15 +14,27 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'BookNest',
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: kPrimaryColor,
-        textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => FeaturedBooksCubit(
+            homeRepo: getIt.get<HomeRepoImpl>(),
+          )..fetchFeaturedBooks(),
+        ),
+        BlocProvider(
+          create: (context) => NewestBooksCubit(getIt.get<HomeRepoImpl>()),
+        )
+      ],
+      child: GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'BookNest',
+        theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: kPrimaryColor,
+          textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+        ),
+        routes: RouteManager.routes,
+        initialRoute: RoutesName.kSplashPage,
       ),
-      routes: RouteManager.routes,
-      initialRoute: RoutesName.kSplashPage,
     );
   }
 }
