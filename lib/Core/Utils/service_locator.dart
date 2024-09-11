@@ -3,7 +3,7 @@ import 'package:book_nest/Features/Home/Data/Repos/home_repo_imp.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
-final getIt = GetIt.instance;
+final GetIt getIt = GetIt.instance;
 
 void setupServiceLocator() {
   getIt.registerSingleton<ApiService>(ApiService(Dio()));
