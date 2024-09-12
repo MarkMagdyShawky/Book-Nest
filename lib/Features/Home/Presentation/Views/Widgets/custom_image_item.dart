@@ -2,7 +2,6 @@ import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:book_nest/Core/Widgets/custom_circular_step_progress_indicator.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class CustomImageItem extends StatelessWidget {
   final String imageURL;

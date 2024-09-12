@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../Core/Resources/colorManager.dart';
 import '../../../../Core/Resources/pageDimensions.dart';
 import '../../../../Core/Resources/styles.dart';
-import '../../../Home/Presentation/Views/Widgets/BookListWidgets/rationgWidgets.dart';
+import '../../../Home/Presentation/Views/Widgets/BookListWidgets/custom_rating_widget.dart';
 import '../../../Home/Presentation/Views/Widgets/custom_image_item.dart';
 
 class BookDetailsSection extends StatelessWidget {
@@ -34,8 +34,10 @@ class BookDetailsSection extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 10),
-        RationgWidgets(
+        RatingWidgets(
           mainAxisAlignment: MainAxisAlignment.center,
+          rating: 0,
+          count: 0,
         ),
       ],
     );

@@ -14,7 +14,8 @@ class SearchResult extends StatelessWidget {
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.symmetric(vertical: 10.0),
-          child: BestSellerListItem(),
+          // child: BestSellerListItem(),
+          child: Text("data"),
         );
       },
     );
