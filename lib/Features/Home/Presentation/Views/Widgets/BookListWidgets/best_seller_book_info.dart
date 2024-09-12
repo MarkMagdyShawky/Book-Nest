@@ -21,7 +21,7 @@ class BestSellerBookDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            bookModel.volumeInfo.title.toString()!,
+            bookModel.volumeInfo.title.toString(),
             style: Styles.textStyle20,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,

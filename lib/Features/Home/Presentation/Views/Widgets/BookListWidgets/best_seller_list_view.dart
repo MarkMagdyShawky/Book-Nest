@@ -1,4 +1,6 @@
+import 'package:book_nest/Core/Widgets/custom_circular_step_progress_indicator.dart';
 import 'package:book_nest/Core/Widgets/custom_error_widget.dart';
+import 'package:book_nest/Core/Widgets/custom_loading_card.dart';
 import 'package:book_nest/Core/Widgets/custom_loading_widget.dart';
 import 'package:book_nest/Features/Home/Presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_list_item.dart';
@@ -17,7 +19,7 @@ class BestSellerListView extends StatelessWidget {
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           padding: EdgeInsets.zero,
-          itemCount: 10,
+          itemCount: state.books.length,
           itemBuilder: (context, index) {
             return Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
@@ -31,7 +33,13 @@ class BestSellerListView extends StatelessWidget {
       } else if (state is NewestBooksFailure) {
         return CustomErrorWidget(errorMessage: state.errorMessage);
       } else {
-        return CustomLoadingWidget();
+        return Column(
+          children: [
+            CustomLoadingCard(),
+            CustomLoadingCard(),
+            CustomLoadingCard(),
+          ],
+        );
       }
     });
   }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
+import '../Resources/colorManager.dart';
+
 class CustomCircularStepProgressIndicator extends StatelessWidget {
   const CustomCircularStepProgressIndicator({super.key});
 
@@ -17,7 +19,7 @@ class CustomCircularStepProgressIndicator extends StatelessWidget {
       gradientColor: LinearGradient(
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
-        colors: [Colors.cyan, Colors.orangeAccent],
+        colors: [kSecondColor,kSecondColor.withOpacity(0.7)],
       ),
     );
   }
