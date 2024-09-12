@@ -1,5 +1,6 @@
 import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:book_nest/Core/Widgets/custom_circular_step_progress_indicator.dart';
+import 'package:book_nest/Core/Widgets/custom_image_animation_loading.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
@@ -10,21 +11,18 @@ class CustomImageItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(16),
-      child: Container(
-        color: kSecondColor.withOpacity(0.2),
-        child: AspectRatio(
-          aspectRatio: 2.6 / 4,
-          child: CachedNetworkImage(
-            imageUrl: imageURL,
-            fit: BoxFit.fill,
-            placeholder: (context, url) => Center(
-              child: CustomCircularStepProgressIndicator(),
-            ),
-            errorWidget: (context, url, error) => Icon(
-              Icons.error_outline_rounded,
-              size: 40,
-              color: kWhiteColor2,
-            ),
+      child: AspectRatio(
+        aspectRatio: 2.6 / 4,
+        child: CachedNetworkImage(
+          imageUrl: imageURL,
+          fit: BoxFit.fill,
+          placeholder: (context, url) => Center(
+            child: CustomImageLoadingAnimation(),
+          ),
+          errorWidget: (context, url, error) => Icon(
+            Icons.error_outline_rounded,
+            size: 40,
+            color: kWhiteColor2,
           ),
         ),
       ),
