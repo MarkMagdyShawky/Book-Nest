@@ -1,5 +1,5 @@
 import 'package:book_nest/Core/Resources/colorManager.dart';
-import 'package:book_nest/Core/Resources/routeManager.dart';
+import 'package:book_nest/Core/Resources/app_router.dart';
 import 'package:book_nest/Core/Utils/service_locator.dart';
 import 'package:book_nest/Features/Home/Data/Repos/home_repo_imp.dart';
 import 'package:book_nest/Features/Home/Presentation/manager/featured_books_cubit/featured_books_cubit.dart';
@@ -27,15 +27,14 @@ class MyApp extends StatelessWidget {
           )..fetchNewestBooks(),
         )
       ],
-      child: GetMaterialApp(
+      child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         title: 'BookNest',
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: kPrimaryColor,
           textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
         ),
-        routes: RouteManager.routes,
-        initialRoute: RoutesName.kSplashPage,
+        routerConfig: AppRouts.router,
       ),
     );
   }

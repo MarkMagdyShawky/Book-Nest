@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../Home/Presentation/Views/Widgets/BookListWidgets/best_seller_list_item.dart';
+// import '../../../../Home/Presentation/Views/Widgets/BookListWidgets/best_seller_list_item.dart';
 
 class SearchResult extends StatelessWidget {
   const SearchResult({super.key});

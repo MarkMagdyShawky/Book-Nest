@@ -1,7 +1,8 @@
 import 'package:book_nest/Core/Resources/fontManager.dart';
-import 'package:book_nest/Core/Resources/routeManager.dart';
+import 'package:book_nest/Core/Resources/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -18,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
           FontManager().LogoText(38),
           IconButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RoutesName.kSearchPage);
+              GoRouter.of(context).pushNamed(RoutesName.kSearchPage);
             },
             icon: Icon(
               FontAwesomeIcons.magnifyingGlass,

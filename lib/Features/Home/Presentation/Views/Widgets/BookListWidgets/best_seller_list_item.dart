@@ -1,8 +1,9 @@
-import 'package:book_nest/Core/Resources/routeManager.dart';
+import 'package:book_nest/Core/Resources/app_router.dart';
 import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:book_nest/Features/Home/Presentation/Views/Widgets/custom_image_item.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_book_info.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../../Core/Resources/pageDimensions.dart';
 
 class BestSellerListItem extends StatelessWidget {
@@ -15,7 +16,7 @@ class BestSellerListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushNamed(RoutesName.kBookDetails);
+        GoRouter.of(context).pushNamed(RoutesName.kBookDetails);
       },
       child: SizedBox(
         height: 130,

@@ -1,6 +1,7 @@
-import 'package:book_nest/Core/Resources/routeManager.dart';
+import 'package:book_nest/Core/Resources/app_router.dart';
 import 'package:book_nest/Features/Splash/Presentation/Views/Widgets/splashPageBody.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -32,13 +33,7 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        Navigator.popAndPushNamed(context, RoutesName.kHomePage);
-        // Using GetX
-        // Get.to(
-        //   () => const HomePage(),
-        //   transition: Transition.fadeIn,
-        //   // duration: kTransitionDiration,
-        // );
+        GoRouter.of(context).pushReplacementNamed(RoutesName.kHomePage);
       },
     );
   }
