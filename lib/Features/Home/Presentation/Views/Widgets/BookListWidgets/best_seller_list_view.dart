@@ -1,9 +1,10 @@
-import 'package:book_nest/Core/Widgets/custom_error_widget.dart';
-import 'package:book_nest/Core/Widgets/custom_loading_card.dart';
+import 'package:book_nest/Core/Widgets/Loading/custom_loading_card.dart';
 import 'package:book_nest/Features/Home/Presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../../../Core/Widgets/custom_error_widget.dart';
 
 class BestSellerListView extends StatelessWidget {
   const BestSellerListView({super.key});

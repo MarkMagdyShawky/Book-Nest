@@ -2,6 +2,8 @@ import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:card_loading/card_loading.dart';
 import 'package:flutter/material.dart';
 
+import '../../Resources/pageDimensions.dart';
+
 class CustomImageLoadingAnimation extends StatelessWidget {
   const CustomImageLoadingAnimation({super.key});
 
@@ -10,11 +12,11 @@ class CustomImageLoadingAnimation extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 2.6 / 4,
       child: CardLoading(
-       cardLoadingTheme:  CardLoadingTheme(
+        cardLoadingTheme: CardLoadingTheme(
           colorOne: kSecondColor.withOpacity(0.7),
           colorTwo: kSecondColor.withOpacity(0.7),
         ),
-        height: 150,
+        height: PageDimensions().pageHeight(context) * 0.26,
         borderRadius: BorderRadius.all(Radius.circular(15)),
         margin: EdgeInsets.only(bottom: 10),
       ),

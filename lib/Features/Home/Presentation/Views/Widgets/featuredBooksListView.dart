@@ -1,5 +1,5 @@
 import 'package:book_nest/Core/Widgets/custom_error_widget.dart';
-import 'package:book_nest/Core/Widgets/custom_loading_widget.dart';
+import 'package:book_nest/Core/Widgets/Loading/custom_loading_widget.dart';
 import 'package:book_nest/Features/Home/Presentation/manager/featured_books_cubit/featured_books_cubit.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/custom_image_item.dart';
 import 'package:flutter/material.dart';
