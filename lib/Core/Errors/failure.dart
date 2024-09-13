@@ -30,13 +30,13 @@ class ServerFailure extends Failure {
 
       case DioExceptionType.connectionError:
         return ServerFailure(
-            errorMessage: 'Connection error, Please check your internet connection and try again');
+            errorMessage: 'Please check your internet connection and try again');
 
       case DioExceptionType.unknown:
-        if (dioException.message!.contains('SocketExeption')) {
+        if (dioException.message!.contains('SocketException')) {
           return ServerFailure(errorMessage: 'Internet connection error');
         }
-        return ServerFailure(errorMessage: 'Unexpexted error , please try again');
+        return ServerFailure(errorMessage: 'Unexpected error , please try again');
     }
   }
 

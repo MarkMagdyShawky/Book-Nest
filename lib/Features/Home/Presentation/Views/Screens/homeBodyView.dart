@@ -22,23 +22,30 @@ class HomeBodyView extends StatelessWidget {
       child: CustomScrollView(
         physics: ClampingScrollPhysics(),
         slivers: [
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Padding(
+                const Padding(
                   padding: EdgeInsets.symmetric(horizontal: kPadding20),
                   child: CustomAppBar(),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.only(left: kPadding20),
                   child: FreaturedBooksListView(),
                 ),
                 const SizedBox(height: 30),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: kPadding20),
-                  child: Text("Best Seller", style: Styles.textStyle18),
+                  child: Text(
+                    "Best Seller",
+                    style: Styles.textStyle20.copyWith(
+                      fontFamily: "Montserrat",
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
                 ),
+                const SizedBox(height: 10),
               ],
             ),
           ),

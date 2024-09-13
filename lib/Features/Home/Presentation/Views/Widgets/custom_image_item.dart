@@ -1,5 +1,4 @@
 import 'package:book_nest/Core/Resources/colorManager.dart';
-import 'package:book_nest/Core/Widgets/custom_circular_step_progress_indicator.dart';
 import 'package:book_nest/Core/Widgets/custom_image_animation_loading.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';

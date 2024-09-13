@@ -25,7 +25,7 @@ class FreaturedBooksListView extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.only(right: 20.0),
                   child: CustomImageItem(
-                    imageURL: state.books[index].volumeInfo.imageLinks.thumbnail,
+                    imageURL: state.books[index].volumeInfo.imageLinks?.thumbnail ?? '',
                   ),
                 );
               },
