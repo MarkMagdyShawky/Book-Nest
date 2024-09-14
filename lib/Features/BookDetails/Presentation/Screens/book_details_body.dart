@@ -1,4 +1,5 @@
 import 'package:book_nest/Features/BookDetails/Presentation/Widgets/custom_book_details_appBar.dart';
+import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../Widgets/book_actions.dart';
@@ -6,7 +7,8 @@ import '../Widgets/book_details_section.dart';
 import '../Widgets/similar_book_section.dart';
 
 class BookDetailsBody extends StatelessWidget {
-  const BookDetailsBody({super.key});
+  const BookDetailsBody({super.key, required this.bookModel});
+  final BookModel bookModel;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,9 @@ class BookDetailsBody extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 const CustomBookDetailsAppBar(),
-                BookDetailsSection(),
+                BookDetailsSection(
+                  bookModel: bookModel,
+                ),
                 const SizedBox(height: 30),
                 // Book Actions (btn)
                 BookActions(),

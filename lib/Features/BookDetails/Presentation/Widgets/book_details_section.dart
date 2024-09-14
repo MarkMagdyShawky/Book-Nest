@@ -1,32 +1,39 @@
+import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 import '../../../../Core/Resources/colorManager.dart';
+import '../../../../Core/Resources/list_manager.dart';
 import '../../../../Core/Resources/pageDimensions.dart';
 import '../../../../Core/Resources/styles.dart';
 import '../../../Home/Presentation/Views/Widgets/BookListWidgets/custom_rating_widget.dart';
 import '../../../Home/Presentation/Views/Widgets/custom_image_item.dart';
 
 class BookDetailsSection extends StatelessWidget {
-  const BookDetailsSection({super.key});
+  const BookDetailsSection({super.key, required this.bookModel});
+  final BookModel bookModel;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: PageDimensions().pageWidth(context) * 0.21),
+          padding: EdgeInsets.symmetric(
+              horizontal: PageDimensions().pageWidth(context) * 0.21),
           child: CustomImageItem(
-            imageURL: "",
+            imageURL: bookModel.volumeInfo.imageLinks?.thumbnail ?? '',
           ),
         ),
         const SizedBox(height: 30),
-        Text(
-          "The Jungle Book",
-          style: Styles.textStyle30,
-          textAlign: TextAlign.center,
+        Padding(
+          padding: const EdgeInsets.all(5.0),
+          child: Text(
+            bookModel.volumeInfo.title.toString(),
+            style: Styles.textStyle30,
+            textAlign: TextAlign.center,
+          ),
         ),
         const SizedBox(height: 5),
         Text(
-          "Rudyard Kipling",
+          bookModel.volumeInfo.authors![0].toString(),
           style: Styles.textStyle18.copyWith(
             fontStyle: FontStyle.italic,
             color: kWhiteColor1.withOpacity(0.7),
@@ -36,8 +43,8 @@ class BookDetailsSection extends StatelessWidget {
         const SizedBox(height: 10),
         RatingWidgets(
           mainAxisAlignment: MainAxisAlignment.center,
-          rating: 0,
-          count: 0,
+          rating: rationList[2],
+          count: ratingCount[1],
         ),
       ],
     );
