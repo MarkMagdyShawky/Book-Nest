@@ -10,3 +10,5 @@ const Color kWhiteColor2 = Color(0xFFB7B7B7);
 const Color kBlackColor3 = Color(0xff000000);
 
 const Color kGlodColor = Color(0xffFFDD4F);
+
+const Color kPurpelColor1 = Color(0xff5C609B);
