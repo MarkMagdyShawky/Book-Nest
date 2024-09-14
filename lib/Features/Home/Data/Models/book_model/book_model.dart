@@ -2,8 +2,8 @@ import 'package:equatable/equatable.dart';
 
 import 'access_info.dart';
 import 'sale_info.dart';
-import 'search_info.dart';
 import 'volume_info.dart';
+import 'search_info.dart';
 
 class BookModel extends Equatable {
   final String? kind;

@@ -13,7 +13,7 @@ import '../../Features/Home/Data/Models/book_model/book_model.dart';
 abstract class AppRouts {
   static final GoRouter router = GoRouter(routes: [
     GoRoute(
-      path: RoutesName.kSplashPage,
+      path: '/',
       builder: (context, state) => SplashPage(),
     ),
     GoRoute(
@@ -24,7 +24,8 @@ abstract class AppRouts {
       path: RoutesName.kBookDetails,
       builder: (context, state) {
         return BlocProvider(
-          create: (context) => SimilerBooksCubit(homeRepo: getIt.get<HomeRepoImpl>()),
+          create: (context) =>
+              SimilerBooksCubit(homeRepo: getIt.get<HomeRepoImpl>()),
           child: BookDetailsPage(bookModel: state.extra as BookModel),
         );
       },
@@ -46,8 +47,8 @@ abstract class AppRouts {
 // }
 
 class RoutesName {
-  static const String kSplashPage = "Splash";
-  static const String kHomePage = "Home";
-  static const String kBookDetails = "BookDetails";
-  static const String kSearchPage = "SearchPage";
+  static const String kSplashPage = "/Splash";
+  static const String kHomePage = "/Home";
+  static const String kBookDetails = "/BookDetails";
+  static const String kSearchPage = "/SearchPage";
 }

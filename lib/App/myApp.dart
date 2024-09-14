@@ -6,7 +6,6 @@ import 'package:book_nest/Features/Home/Presentation/manager/featured_books_cubi
 import 'package:book_nest/Features/Home/Presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyApp extends StatelessWidget {
@@ -32,7 +31,8 @@ class MyApp extends StatelessWidget {
         title: 'BookNest',
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: kPrimaryColor,
-          textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+          textTheme:
+              GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
         ),
         routerConfig: AppRouts.router,
       ),

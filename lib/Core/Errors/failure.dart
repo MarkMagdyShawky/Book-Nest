@@ -23,20 +23,23 @@ class ServerFailure extends Failure {
         return ServerFailure(errorMessage: 'Bad Certificate');
 
       case DioExceptionType.badResponse:
-        return ServerFailure.fromResponse(dioException.response!.statusCode!, dioException.response!.data);
+        return ServerFailure.fromResponse(
+            dioException.response!.statusCode!, dioException.response!.data);
 
       case DioExceptionType.cancel:
         return ServerFailure(errorMessage: 'Request to ApiServer was canceled');
 
       case DioExceptionType.connectionError:
         return ServerFailure(
-            errorMessage: 'Please check your internet connection and try again');
+            errorMessage:
+                'Please check your internet connection and try again');
 
       case DioExceptionType.unknown:
         if (dioException.message!.contains('SocketException')) {
           return ServerFailure(errorMessage: 'Internet connection error');
         }
-        return ServerFailure(errorMessage: 'Unexpected error , please try again');
+        return ServerFailure(
+            errorMessage: 'Unexpected error , please try again');
     }
   }
 
@@ -44,11 +47,14 @@ class ServerFailure extends Failure {
     if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
       return ServerFailure(errorMessage: response['error']['message']);
     } else if (statusCode == 404) {
-      return ServerFailure(errorMessage: 'Your request not found, Please try  later!');
+      return ServerFailure(
+          errorMessage: 'Your request not found, Please try  later!');
     } else if (statusCode == 500) {
-      return ServerFailure(errorMessage: 'Internal Server error, Please try  later!');
+      return ServerFailure(
+          errorMessage: 'Internal Server error, Please try  later!');
     } else {
-      return ServerFailure(errorMessage: 'Opps There was an Error, Please try again');
+      return ServerFailure(
+          errorMessage: 'Opps There was an Error, Please try again');
     }
   }
 }
