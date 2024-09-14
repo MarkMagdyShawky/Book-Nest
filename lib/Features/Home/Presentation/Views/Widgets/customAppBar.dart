@@ -19,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
           FontManager().LogoText(38),
           IconButton(
             onPressed: () {
-              GoRouter.of(context).pushNamed(RoutesName.kSearchPage);
+              GoRouter.of(context).push(RoutesName.kSearchPage);
             },
             icon: Icon(
               FontAwesomeIcons.magnifyingGlass,

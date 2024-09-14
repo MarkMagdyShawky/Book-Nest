@@ -11,8 +11,9 @@ class CustomSearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration:
-          CustomBoxDecoration().gradientBgBoxDecoration().copyWith(borderRadius: BorderRadius.circular(16)),
+      decoration: CustomBoxDecoration()
+          .gradientBgBoxDecoration()
+          .copyWith(borderRadius: BorderRadius.circular(16)),
       child: TextField(
         decoration: InputDecoration(
           hintText: "Search",

@@ -11,7 +11,8 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<NewestBooksCubit, NewestBooksState>(builder: (context, state) {
+    return BlocBuilder<NewestBooksCubit, NewestBooksState>(
+        builder: (context, state) {
       if (state is NewestBooksSuccess) {
         return ListView.builder(
           shrinkWrap: true,

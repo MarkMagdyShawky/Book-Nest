@@ -1,3 +1,4 @@
+import 'package:book_nest/Core/Resources/custom_loading_list.dart';
 import 'package:book_nest/Core/Widgets/custom_error_widget.dart';
 import 'package:book_nest/Core/Widgets/Loading/custom_loading_widget.dart';
 import 'package:book_nest/Features/Home/Presentation/manager/featured_books_cubit/featured_books_cubit.dart';
@@ -34,7 +35,7 @@ class FreaturedBooksListView extends StatelessWidget {
         } else if (state is FeaturedBooksFailure) {
           return CustomErrorWidget(errorMessage: state.errorMessage);
         } else {
-          return const CustomLoadingWidget();
+          return const CustomLoadingList(height: 0.26);
         }
       },
     );
