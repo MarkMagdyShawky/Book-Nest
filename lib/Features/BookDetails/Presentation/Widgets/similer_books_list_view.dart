@@ -4,6 +4,8 @@ import 'package:book_nest/Core/Resources/custom_loading_list.dart';
 import 'package:book_nest/Features/BookDetails/Presentation/manager/similer_boos_cubit/similer_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
+import '../../../../Core/Resources/app_router.dart';
 import '../../../Home/Presentation/Views/Widgets/custom_image_item.dart';
 
 class SimilerBooksListView extends StatelessWidget {
@@ -22,8 +24,13 @@ class SimilerBooksListView extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: EdgeInsets.only(right: 10),
-                    child: CustomImageItem(
-                      imageURL: state.books[index].volumeInfo.imageLinks!.thumbnail,
+                    child: GestureDetector(
+                      onTap: () {
+                        GoRouter.of(context).push(RoutesName.kBookDetails, extra: state.books[index]);
+                      },
+                      child: CustomImageItem(
+                        imageURL: state.books[index].volumeInfo.imageLinks!.thumbnail,
+                      ),
                     ),
                   );
                 }),
