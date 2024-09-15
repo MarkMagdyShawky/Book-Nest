@@ -23,7 +23,9 @@ class BestSellerListItem extends StatelessWidget {
         width: PageDimensions().pageWidth(context) - 70,
         child: Row(
           children: <Widget>[
-            CustomImageItem(imageURL: bookModel.volumeInfo.imageLinks?.thumbnail ?? ''),
+            CustomImageItem(
+              imageURL: bookModel.volumeInfo.imageLinks?.thumbnail ?? '',
+            ),
             const SizedBox(
               width: 25,
             ),

@@ -7,14 +7,14 @@ import 'package:dio/dio.dart';
 
 class HomeRepoImpl implements HomeRepo {
   final ApiService apiService;
-
+  String bookCategory = "Programming";
   HomeRepoImpl(this.apiService);
 
   @override
   Future<Either<Failure, List<BookModel>>> fetchNewestBooks() async {
     try {
-      var data =
-          await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&Sorting=Newest&q=subject:Novels');
+      var data = await apiService.get(
+          endPoint: 'volumes?Filtering=free-ebooks&Sorting=Newest&q=subject:$bookCategory');
       List<BookModel> books = [];
 
       for (var item in data['items']) {
@@ -36,7 +36,7 @@ class HomeRepoImpl implements HomeRepo {
   @override
   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
     try {
-      var data = await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&q=subject:Novels');
+      var data = await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&q=$bookCategory');
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));
@@ -53,8 +53,8 @@ class HomeRepoImpl implements HomeRepo {
   @override
   Future<Either<Failure, List<BookModel>>> fetchSimilerBooks({required String category}) async {
     try {
-      var data =
-          await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&Sorting=relevance&q=subject:Novels');
+      var data = await apiService.get(
+          endPoint: 'volumes?Filtering=free-ebooks&Sorting=relevance&q=subject:$bookCategory');
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));

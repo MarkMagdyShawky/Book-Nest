@@ -7,8 +7,7 @@ import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidge
 import 'package:flutter/material.dart';
 
 class BestSellerBookDetails extends StatelessWidget {
-  const BestSellerBookDetails(
-      {required this.bookModel, required this.bookIndex});
+  const BestSellerBookDetails({required this.bookModel, required this.bookIndex});
 
   final BookModel bookModel;
   final int bookIndex;
@@ -30,6 +29,8 @@ class BestSellerBookDetails extends StatelessWidget {
           Text(
             bookModel.volumeInfo.authors![0].toString(),
             style: Styles.textStyle14.copyWith(color: kWhiteColor2),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
           const SizedBox(height: 4),
           Row(
@@ -37,13 +38,12 @@ class BestSellerBookDetails extends StatelessWidget {
             children: <Widget>[
               Text(
                 "Free",
-                style: Styles.textStyle20.copyWith(
-                    fontWeight: FontWeight.w900, fontFamily: kMontserrat),
+                style: Styles.textStyle20.copyWith(fontWeight: FontWeight.w900, fontFamily: kMontserrat),
               ),
               RatingWidgets(
                 mainAxisAlignment: MainAxisAlignment.start,
-                rating: rationList[bookIndex],
-                count: ratingCount[bookIndex],
+                rating: bookModel.volumeInfo.averageRating ?? 0,
+                count: bookModel.volumeInfo.ratingsCount ?? 0,
               ),
             ],
           )

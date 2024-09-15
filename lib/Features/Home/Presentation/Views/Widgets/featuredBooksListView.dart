@@ -28,9 +28,7 @@ class FreaturedBooksListView extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 20.0),
                   child: GestureDetector(
                     onTap: () {
-                      () {
-                        GoRouter.of(context).push(RoutesName.kBookDetails, extra: state.books[index]);
-                      };
+                      GoRouter.of(context).push(RoutesName.kBookDetails, extra: state.books[index]);
                     },
                     child: CustomImageItem(
                       imageURL: state.books[index].volumeInfo.imageLinks?.thumbnail ?? '',

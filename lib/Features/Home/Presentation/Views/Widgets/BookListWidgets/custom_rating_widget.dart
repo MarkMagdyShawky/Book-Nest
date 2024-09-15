@@ -10,7 +10,7 @@ class RatingWidgets extends StatelessWidget {
     required this.count,
   });
 
-  final double rating;
+  final num rating;
   final int count;
   final MainAxisAlignment mainAxisAlignment;
 

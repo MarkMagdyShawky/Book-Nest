@@ -16,8 +16,7 @@ class BookDetailsSection extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: PageDimensions().pageWidth(context) * 0.21),
+          padding: EdgeInsets.symmetric(horizontal: PageDimensions().pageWidth(context) * 0.21),
           child: CustomImageItem(
             imageURL: bookModel.volumeInfo.imageLinks?.thumbnail ?? '',
           ),
@@ -41,10 +40,16 @@ class BookDetailsSection extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 10),
+        // RatingWidgets(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   rating: rationList[2],
+        //   count: ratingCount[1],
+        // ),
+
         RatingWidgets(
           mainAxisAlignment: MainAxisAlignment.center,
-          rating: rationList[2],
-          count: ratingCount[1],
+          rating: bookModel.volumeInfo.averageRating ?? 0,
+          count: bookModel.volumeInfo.ratingsCount ?? 0,
         ),
       ],
     );

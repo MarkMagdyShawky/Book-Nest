@@ -1,4 +1,5 @@
 import 'package:book_nest/Core/Widgets/Loading/custom_loading_card.dart';
+import 'package:book_nest/Features/Home/Presentation/Views/Widgets/BookListWidgets/custom_loading_list_cards.dart';
 import 'package:book_nest/Features/Home/Presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_list_item.dart';
 import 'package:flutter/material.dart';
@@ -11,8 +12,7 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<NewestBooksCubit, NewestBooksState>(
-        builder: (context, state) {
+    return BlocBuilder<NewestBooksCubit, NewestBooksState>(builder: (context, state) {
       if (state is NewestBooksSuccess) {
         return ListView.builder(
           shrinkWrap: true,
@@ -32,13 +32,7 @@ class BestSellerListView extends StatelessWidget {
       } else if (state is NewestBooksFailure) {
         return CustomErrorWidget(errorMessage: state.errorMessage);
       } else {
-        return Column(
-          children: [
-            CustomLoadingCard(),
-            CustomLoadingCard(),
-            CustomLoadingCard(),
-          ],
-        );
+        return CustomLoadingListCards();
       }
     });
   }
