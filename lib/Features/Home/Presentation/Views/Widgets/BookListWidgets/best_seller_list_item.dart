@@ -1,4 +1,4 @@
-import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
+import 'package:book_nest/Core/Models/book_model/book_model.dart';
 import 'package:book_nest/Features/Home/Presentation/Views/Widgets/custom_image_item.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_book_info.dart';
 import 'package:flutter/material.dart';

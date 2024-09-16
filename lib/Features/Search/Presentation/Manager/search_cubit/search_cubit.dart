@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
+import 'package:book_nest/Core/Models/book_model/book_model.dart';
 import 'package:book_nest/Features/Search/Data/Repo/search_repo.dart';
 import 'package:equatable/equatable.dart';
-
-import '../../../../Home/Data/Models/book_model/book_model.dart';
 
 part 'search_state.dart';
 

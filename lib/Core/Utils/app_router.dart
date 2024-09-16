@@ -1,3 +1,4 @@
+import 'package:book_nest/Core/Models/book_model/book_model.dart';
 import 'package:book_nest/Core/Utils/service_locator.dart';
 import 'package:book_nest/Features/BookDetails/Presentation/Screens/book_details_page.dart';
 import 'package:book_nest/Features/BookDetails/Presentation/manager/similer_boos_cubit/similer_books_cubit.dart';
@@ -9,8 +10,6 @@ import 'package:book_nest/Features/Search/Presentation/Views/Screens/search_page
 import 'package:book_nest/Features/Splash/Presentation/Views/Screens/splashPage.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-
-import '../../Features/Home/Data/Models/book_model/book_model.dart';
 
 abstract class AppRouts {
   static final GoRouter router = GoRouter(routes: [

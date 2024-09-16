@@ -1,7 +1,7 @@
+import 'package:book_nest/Core/Models/book_model/book_model.dart';
 import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:book_nest/Core/Resources/constants.dart';
 import 'package:book_nest/Core/Resources/styles.dart';
-import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/custom_rating_widget.dart';
 import 'package:flutter/material.dart';
 
