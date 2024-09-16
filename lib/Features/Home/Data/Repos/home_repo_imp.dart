@@ -51,20 +51,42 @@ class HomeRepoImpl implements HomeRepo {
   }
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetchSimilerBooks({required String category}) async {
-    try {
-      var data = await apiService.get(
-          endPoint: 'volumes?Filtering=free-ebooks&Sorting=relevance&q=subject:$bookCategory');
-      List<BookModel> books = [];
-      for (var item in data['items']) {
-        books.add(BookModel.fromJson(item));
-      }
+  Future<Either<Failure, List<BookModel>>> fetchSimilerBooks({required String? category}) async {
+    if (category == null) {
+      try {
+        var data = await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&Sorting=relevance&q=book');
+        List<BookModel> books = [];
+        for (var item in data['items']) {
+          books.add(BookModel.fromJson(item));
+        }
 
-      return right(books);
-    } on DioException catch (e) {
-      return left(ServerFailure.fromDioExeption(e));
-    } catch (e) {
-      return left(ServerFailure(errorMessage: e.toString()));
+        return right(books);
+      } on DioException catch (e) {
+        return left(ServerFailure.fromDioExeption(e));
+      } catch (e) {
+        return left(ServerFailure(errorMessage: e.toString()));
+      }
+    } else {
+      try {
+        var data =
+            await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&Sorting=relevance&q=$category');
+        List<BookModel> books = [];
+        for (var item in data['items']) {
+          books.add(BookModel.fromJson(item));
+        }
+
+        return right(books);
+      } on DioException catch (e) {
+        return left(ServerFailure.fromDioExeption(e));
+      } catch (e) {
+        var data = await apiService.get(endPoint: 'volumes?Filtering=free-ebooks&Sorting=relevance&q=book');
+        List<BookModel> books = [];
+        for (var item in data['items']) {
+          books.add(BookModel.fromJson(item));
+        }
+
+        return right(books);
+      }
     }
   }
 }

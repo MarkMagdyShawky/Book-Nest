@@ -29,7 +29,7 @@ class SimilerBooksListView extends StatelessWidget {
                         GoRouter.of(context).push(RoutesName.kBookDetails, extra: state.books[index]);
                       },
                       child: CustomImageItem(
-                        imageURL: state.books[index].volumeInfo.imageLinks!.thumbnail,
+                        imageURL: state.books[index].volumeInfo.imageLinks?.thumbnail ?? "",
                       ),
                     ),
                   );
