@@ -11,6 +11,14 @@ class SearchInitial extends SearchState {}
 
 class SearchLoading extends SearchState {}
 
-class SearchSuccess extends SearchState {}
+class SearchSuccess extends SearchState {
+  final List<BookModel> books;
 
-class SearchFailure extends SearchState {}
+  SearchSuccess(this.books);
+}
+
+class SearchFailure extends SearchState {
+  final String errMessag;
+
+  SearchFailure(this.errMessag);
+}
