@@ -12,7 +12,7 @@ class SearchRepoImp extends SearchRepo {
   @override
   Future<Either<Failure, List<BookModel>>> featchSeachedBooks({required String searchText}) async {
     try {
-      String endPoint = 'volumes?Filtering=free-ebooks&q=subject:$searchText';
+      String endPoint = 'volumes?Filtering=free-ebooks&q=$searchText';
 
       var data = await apiService.get(endPoint: endPoint);
 
@@ -25,7 +25,7 @@ class SearchRepoImp extends SearchRepo {
     } on DioException catch (e) {
       return left(ServerFailure.fromDioExeption(e));
     } catch (e) {
-      return left(ServerFailure(errorMessage: e.toString()));
+      return left(ServerFailure(errorMessage: "No Books Founded!"));
     }
   }
 }
