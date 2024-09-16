@@ -1,11 +1,13 @@
+import 'package:book_nest/Core/Utils/functions/launche_url.dart';
+import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import '../../../../Core/Resources/colorManager.dart';
 import '../../../../Core/Widgets/custom_button.dart';
 
 class BookActions extends StatelessWidget {
-  const BookActions({super.key});
-
+  const BookActions({super.key, required this.bookModel});
+  final BookModel bookModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,7 +18,7 @@ class BookActions extends StatelessWidget {
           Expanded(
             child: CustomButton(
               backgroundColor: kWhiteColor1,
-              textColor: kBlackColor3,
+              textColor: Colors.black,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(15),
                 topLeft: Radius.circular(15),
@@ -26,6 +28,9 @@ class BookActions extends StatelessWidget {
           ),
           Expanded(
             child: CustomButton(
+              onPressed: () {
+                launchCustomUrl(context, bookModel.volumeInfo.previewLink!);
+              },
               backgroundColor: kButtonColor,
               textColor: kWhiteColor1,
               borderRadius: BorderRadius.only(
