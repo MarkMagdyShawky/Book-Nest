@@ -3,6 +3,8 @@ import 'package:book_nest/Features/BookDetails/Presentation/Screens/book_details
 import 'package:book_nest/Features/BookDetails/Presentation/manager/similer_boos_cubit/similer_books_cubit.dart';
 import 'package:book_nest/Features/Home/Data/Repos/home_repo_imp.dart';
 import 'package:book_nest/Features/Home/Presentation/Views/Screens/homePage.dart';
+import 'package:book_nest/Features/Search/Data/Repo/search_repo_imp.dart';
+import 'package:book_nest/Features/Search/Presentation/Manager/search_cubit/search_cubit.dart';
 import 'package:book_nest/Features/Search/Presentation/Views/Screens/search_page.dart';
 import 'package:book_nest/Features/Splash/Presentation/Views/Screens/splashPage.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -24,8 +26,7 @@ abstract class AppRouts {
       path: RoutesName.kBookDetails,
       builder: (context, state) {
         return BlocProvider(
-          create: (context) =>
-              SimilerBooksCubit(homeRepo: getIt.get<HomeRepoImpl>()),
+          create: (context) => SimilerBooksCubit(homeRepo: getIt.get<HomeRepoImpl>()),
           child: BookDetailsPage(bookModel: state.extra as BookModel),
         );
       },
@@ -33,18 +34,14 @@ abstract class AppRouts {
     GoRoute(
       path: RoutesName.kSearchPage,
       builder: (context, state) {
-        return SearchPage();
+        return BlocProvider(
+          create: (context) => SearchedBooksCubit(searchRepo: getIt.get<SearchRepoImp>()),
+          child: const SearchPage(),
+        );
       },
     )
   ]);
 }
-// class RouteManager {
-//   static Map<String, WidgetBuilder> routes = {
-//     RoutesName.kSplashPage: (context) => SplashPage(),
-//     RoutesName.kHomePage: (context) => HomePage(),
-//     RoutesName.kSearchPage: (context) => SearchPage(),
-//   };
-// }
 
 class RoutesName {
   static const String kSplashPage = "/Splash";

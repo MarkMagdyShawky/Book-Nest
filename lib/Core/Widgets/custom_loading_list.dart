@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'pageDimensions.dart';
-import '../Widgets/Loading/custom_image_animation_loading.dart';
+import '../Resources/pageDimensions.dart';
+import 'Loading/custom_image_animation_loading.dart';
 
 class CustomLoadingList extends StatelessWidget {
   const CustomLoadingList({

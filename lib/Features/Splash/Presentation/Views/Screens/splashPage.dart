@@ -1,4 +1,4 @@
-import 'package:book_nest/Core/Resources/app_router.dart';
+import 'package:book_nest/Core/Utils/app_router.dart';
 import 'package:book_nest/Features/Splash/Presentation/Views/Widgets/splashPageBody.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';

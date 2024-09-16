@@ -1,4 +1,3 @@
-import 'package:book_nest/Core/Widgets/Loading/custom_loading_card.dart';
 import 'package:book_nest/Features/Home/Presentation/Views/Widgets/BookListWidgets/custom_loading_list_cards.dart';
 import 'package:book_nest/Features/Home/Presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_list_item.dart';
@@ -24,7 +23,6 @@ class BestSellerListView extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: BestSellerListItem(
                 bookModel: state.books[index],
-                bookIndex: index,
               ),
             );
           },

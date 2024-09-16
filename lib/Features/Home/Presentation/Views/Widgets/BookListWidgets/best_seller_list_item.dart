@@ -1,16 +1,15 @@
-import 'package:book_nest/Core/Resources/app_router.dart';
 import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:book_nest/Features/Home/Presentation/Views/Widgets/custom_image_item.dart';
 import 'package:book_nest/Features/Home/presentation/Views/Widgets/BookListWidgets/best_seller_book_info.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../../../Core/Resources/pageDimensions.dart';
+import '../../../../../../Core/Utils/app_router.dart';
 
 class BestSellerListItem extends StatelessWidget {
-  const BestSellerListItem({super.key, required this.bookModel, required this.bookIndex});
+  const BestSellerListItem({super.key, required this.bookModel});
 
   final BookModel bookModel;
-  final int bookIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +30,6 @@ class BestSellerListItem extends StatelessWidget {
             ),
             BestSellerBookDetails(
               bookModel: bookModel,
-              bookIndex: bookIndex,
             ),
           ],
         ),

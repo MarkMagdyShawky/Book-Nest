@@ -1,11 +1,11 @@
 import 'package:book_nest/Core/Resources/pageDimensions.dart';
+import 'package:book_nest/Core/Utils/app_router.dart';
 import 'package:book_nest/Core/Widgets/custom_error_widget.dart';
-import 'package:book_nest/Core/Resources/custom_loading_list.dart';
+import 'package:book_nest/Core/Widgets/custom_loading_list.dart';
 import 'package:book_nest/Features/BookDetails/Presentation/manager/similer_boos_cubit/similer_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../Core/Resources/app_router.dart';
 import '../../../Home/Presentation/Views/Widgets/custom_image_item.dart';
 
 class SimilerBooksListView extends StatelessWidget {
