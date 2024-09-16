@@ -1,7 +1,6 @@
+import 'package:book_nest/Core/Models/book_model/book_model.dart';
 import 'package:book_nest/Core/Utils/functions/launche_url.dart';
-import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../../../../Core/Resources/colorManager.dart';
 import '../../../../Core/Widgets/custom_button.dart';
 

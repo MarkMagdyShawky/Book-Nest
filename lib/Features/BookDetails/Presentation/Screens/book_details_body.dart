@@ -1,5 +1,5 @@
+import 'package:book_nest/Core/Models/book_model/book_model.dart';
 import 'package:book_nest/Features/BookDetails/Presentation/Widgets/custom_book_details_appBar.dart';
-import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../Widgets/book_actions.dart';

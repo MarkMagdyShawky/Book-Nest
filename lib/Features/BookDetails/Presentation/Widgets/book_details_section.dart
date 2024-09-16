@@ -1,7 +1,6 @@
-import 'package:book_nest/Features/Home/Data/Models/book_model/book_model.dart';
+import 'package:book_nest/Core/Models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 import '../../../../Core/Resources/colorManager.dart';
-import '../../../../Core/Resources/list_manager.dart';
 import '../../../../Core/Resources/pageDimensions.dart';
 import '../../../../Core/Resources/styles.dart';
 import '../../../Home/Presentation/Views/Widgets/BookListWidgets/custom_rating_widget.dart';
@@ -40,12 +39,6 @@ class BookDetailsSection extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 10),
-        // RatingWidgets(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   rating: rationList[2],
-        //   count: ratingCount[1],
-        // ),
-
         RatingWidgets(
           mainAxisAlignment: MainAxisAlignment.center,
           rating: bookModel.volumeInfo.averageRating ?? 0,
