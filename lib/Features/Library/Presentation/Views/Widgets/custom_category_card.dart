@@ -1,8 +1,9 @@
 import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:book_nest/Core/Resources/constants.dart';
-import 'package:book_nest/Core/Resources/imageManager.dart';
 import 'package:book_nest/Core/Resources/pageDimensions.dart';
 import 'package:book_nest/Core/Resources/styles.dart';
+import 'package:book_nest/Core/Utils/app_router.dart';
+import 'package:book_nest/Features/Home/Presentation/Views/Screens/homePage.dart';
 import 'package:flutter/material.dart';
 
 class CustomCategoryCard extends StatelessWidget {
@@ -16,6 +17,11 @@ class CustomCategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => HomePage(category: categoryName),
+        ));
+      },
       child: Container(
         decoration: BoxDecoration(
           color: kPrimaryColor,
