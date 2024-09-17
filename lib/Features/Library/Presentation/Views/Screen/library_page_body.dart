@@ -1,9 +1,6 @@
-import 'package:book_nest/Core/Resources/constants.dart';
-import 'package:book_nest/Core/Resources/list_manager.dart';
 import 'package:book_nest/Core/Resources/pageDimensions.dart';
 import 'package:book_nest/Core/Resources/styles.dart';
 import 'package:book_nest/Core/Widgets/custom_box_decoration.dart';
-import 'package:book_nest/Features/Library/Presentation/Views/Widgets/custom_category_card.dart';
 import 'package:book_nest/Features/Library/Presentation/Views/Widgets/custom_grid_view_list.dart';
 import 'package:flutter/material.dart';
 
@@ -21,16 +18,14 @@ class LibraryPageBody extends StatelessWidget {
         child: ListView(
           physics: ClampingScrollPhysics(),
           children: [
-            Padding(
+            const Padding(
               padding: const EdgeInsets.only(top: 30.0, bottom: 20),
               child: Text("Library", style: Styles.textStyle30),
             ),
             SizedBox(
               child: CustomGridViewList(),
             ),
-            SizedBox(
-              height: 20,
-            )
+            const SizedBox(height: 20)
           ],
         ),
       ),
