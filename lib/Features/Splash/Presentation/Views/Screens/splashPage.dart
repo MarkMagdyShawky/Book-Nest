@@ -33,7 +33,7 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        GoRouter.of(context).pushReplacement(RoutesName.kLibraryPage);
+        GoRouter.of(context).pushReplacement(RoutesName.kHomePage);
       },
     );
   }

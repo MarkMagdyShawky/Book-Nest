@@ -49,7 +49,7 @@ abstract class AppRouts {
 
 class RoutesName {
   static const String kSplashPage = "/Splash";
-  static const String kLibraryPage = "/SearchPage";
+  static const String kLibraryPage = "/LibraryPage";
 
   static const String kHomePage = "/Home";
   static const String kBookDetails = "/BookDetails";

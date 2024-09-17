@@ -19,7 +19,7 @@ class CustomCategoryCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => HomePage(category: categoryName),
+          builder: (context) => HomePage(),
         ));
       },
       child: Container(

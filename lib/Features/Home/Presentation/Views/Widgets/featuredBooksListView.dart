@@ -10,7 +10,8 @@ import '../../../../../Core/Utils/app_router.dart';
 import '../../../../../Core/Widgets/custom_loading_list.dart';
 
 class FreaturedBooksListView extends StatelessWidget {
-  const FreaturedBooksListView({Key? key}) : super(key: key);
+  const FreaturedBooksListView({Key? key, required this.category}) : super(key: key);
+  final String category;
 
   @override
   Widget build(BuildContext context) {

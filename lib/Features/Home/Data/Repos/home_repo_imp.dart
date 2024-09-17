@@ -7,7 +7,7 @@ import 'package:dio/dio.dart';
 
 class HomeRepoImpl implements HomeRepo {
   final ApiService apiService;
-  String bookCategory = "Programming";
+  String bookCategory = "history";
   HomeRepoImpl(this.apiService);
 
   @override

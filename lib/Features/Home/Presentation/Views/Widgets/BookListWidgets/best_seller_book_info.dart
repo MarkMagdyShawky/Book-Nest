@@ -25,7 +25,7 @@ class BestSellerBookDetails extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            bookModel.volumeInfo.authors![0].toString(),
+            bookModel.volumeInfo.authors?[0].toString() ?? "",
             style: Styles.textStyle14.copyWith(color: kWhiteColor2),
             maxLines: 1,
             overflow: TextOverflow.ellipsis,

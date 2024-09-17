@@ -31,7 +31,7 @@ class BookDetailsSection extends StatelessWidget {
         ),
         const SizedBox(height: 5),
         Text(
-          bookModel.volumeInfo.authors![0].toString(),
+          bookModel.volumeInfo.authors?[0].toString() ?? '',
           style: Styles.textStyle18.copyWith(
             fontStyle: FontStyle.italic,
             color: kWhiteColor1.withOpacity(0.7),

@@ -17,7 +17,7 @@ class _BookDetailsPageState extends State<BookDetailsPage> {
   @override
   void initState() {
     BlocProvider.of<SimilerBooksCubit>(context)
-        .fetchSimilerBooks(category: widget.bookModel.volumeInfo.categories![0]);
+        .fetchSimilerBooks(category: widget.bookModel.volumeInfo.categories?[0] ?? 'books');
     super.initState();
   }
 
