@@ -1,13 +1,13 @@
 import 'package:book_nest/Core/Resources/imageManager.dart';
 
 List<String> categoriesImagesList = [
-  ImageManger.Image1,
-  ImageManger.Image1,
-  ImageManger.Image1,
-  ImageManger.Image1,
-  ImageManger.Image1,
-  ImageManger.Image1,
-  ImageManger.Image1,
+  ImageManger.kNovels,
+  ImageManger.kSports,
+  ImageManger.kTechnology,
+  ImageManger.kHealth,
+  ImageManger.kCooking,
+  ImageManger.kHistory,
+  ImageManger.kRomantic
 ];
 
 List<String> categoriesNamesList = [
