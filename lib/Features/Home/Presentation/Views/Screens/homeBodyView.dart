@@ -1,7 +1,6 @@
 import 'package:book_nest/Core/Resources/colorManager.dart';
 import 'package:book_nest/Core/Resources/constants.dart';
 import 'package:book_nest/Core/Resources/styles.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../Widgets/BookListWidgets/best_seller_list_view.dart';
 import '../Widgets/customAppBar.dart';
@@ -31,9 +30,11 @@ class HomeBodyView extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: kPadding20),
                   child: CustomAppBar(),
                 ),
-                 Padding(
+                Padding(
                   padding: const EdgeInsets.only(left: kPadding20),
-                  child: FreaturedBooksListView(category: category ,),
+                  child: FreaturedBooksListView(
+                    category: category,
+                  ),
                 ),
                 const SizedBox(height: 30),
                 Padding(
