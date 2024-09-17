@@ -4,6 +4,7 @@ import 'package:book_nest/Features/BookDetails/Presentation/Screens/book_details
 import 'package:book_nest/Features/BookDetails/Presentation/manager/similer_boos_cubit/similer_books_cubit.dart';
 import 'package:book_nest/Features/Home/Data/Repos/home_repo_imp.dart';
 import 'package:book_nest/Features/Home/Presentation/Views/Screens/homePage.dart';
+import 'package:book_nest/Features/Library/Presentation/Views/Screen/library_page.dart';
 import 'package:book_nest/Features/Search/Data/Repo/search_repo_imp.dart';
 import 'package:book_nest/Features/Search/Presentation/Manager/search_cubit/search_cubit.dart';
 import 'package:book_nest/Features/Search/Presentation/Views/Screens/search_page.dart';
@@ -16,6 +17,10 @@ abstract class AppRouts {
     GoRoute(
       path: '/',
       builder: (context, state) => SplashPage(),
+    ),
+    GoRoute(
+      path: RoutesName.kLibraryPage,
+      builder: (context, state) => LibraryPage(),
     ),
     GoRoute(
       path: RoutesName.kHomePage,
@@ -44,6 +49,8 @@ abstract class AppRouts {
 
 class RoutesName {
   static const String kSplashPage = "/Splash";
+  static const String kLibraryPage = "/SearchPage";
+
   static const String kHomePage = "/Home";
   static const String kBookDetails = "/BookDetails";
   static const String kSearchPage = "/SearchPage";
