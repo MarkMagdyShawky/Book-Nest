@@ -6,7 +6,7 @@
 
 **BookNest** is an elegant and high-performance mobile application built with Flutter, designed to provide users with seamless access to free book previews via the ***Google Books API***. The app delivers a smooth animations for a dynamic UI. 
 
-BookNest emphasizes an intuitive user journey by offering a splash screen, home page featuring the latest and most popular books, detailed book pages, and an advanced search functionality. The application is structured using the **MVVM** design pattern, leveraging **Bloc Cubit** for state management to ensure scalability and maintainability.
+BookNest emphasizes an intuitive user journey by offering a splash screen, home page featuring the new released books, detailed book pages, and an advanced search functionality. The application is structured using the **MVVM** design pattern, leveraging **Bloc Cubit** for state management to ensure scalability and maintainability.
 
 ---
 
@@ -38,7 +38,7 @@ BookNest is developed using modern technologies and best practices in mobile app
 
 - **Flutter:** The core framework for building beautiful UIs natively for Android and iOS.
 - **Bloc Cubit:** For efficient state management using unidirectional data flow.
-- **MVVM (Model-View-ViewModel):** Clean architectural pattern for separation of concerns, ensuring maintainable code.
+- **MVVM:** Clean architectural pattern for separation of concerns, ensuring maintainable code.
 - **Google Books API:** Provides book data and previews.
 
 ----
@@ -64,8 +64,6 @@ BookNest uses a specific color palette to maintain a consistent and aestheticall
 - **Secondary Color:** `#2F004E` - Used for highlites.
 - **Button Color:** `#EF8262` - Used for app buttons.
 - **Text Color:** `#FFFFFF` - Primary text color for readability.
-
-Feel free to adjust these colors to fit your branding or design preferences.
 
 ---
 
