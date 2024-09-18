@@ -1,12 +1,22 @@
 <div align="center">
-  <img src="./App_screenshots/magicBook.png" alt="Logo" width="70"/>
+  <img src="./App_screenshots/magicBook.png" alt="Logo" width="80"/>
   <h1>BookNest</h1>
 </div>
 
 
-**BookNest** is an elegant and high-performance mobile application built with Flutter, designed to provide users with seamless access to free book previews via the ***Google Books API***. The app delivers a smooth, visually appealing experience with clean architecture and animations for a dynamic user interface. 
+**BookNest** is an elegant and high-performance mobile application built with Flutter, designed to provide users with seamless access to free book previews via the ***Google Books API***. The app delivers a smooth animations for a dynamic UI. 
 
 BookNest emphasizes an intuitive user journey by offering a splash screen, home page featuring the latest and most popular books, detailed book pages, and an advanced search functionality. The application is structured using the **MVVM** design pattern, leveraging **Bloc Cubit** for state management to ensure scalability and maintainability.
+
+---
+
+## 🚀 Features
+
+- **Splash Screen:** A visually captivating animated introduction screen.
+- **Home Page:** Displays the newest releases and featured books, dynamically fetched from the Google Books API.
+- **Book Details Page:** Provides detailed information about each book, along with a button to preview the book content.
+- **Search Page:** Empowers users to search for books by title, author, or keyword, integrating real-time results from the Google Books API.
+- **Loading Animations:** Smooth and consistent loading animations across all pages for a refined user experience.
 
 ---
 
@@ -21,15 +31,6 @@ BookNest emphasizes an intuitive user journey by offering a splash screen, home 
 | ![Image 3](./App_screenshots/28.png) | ![Image 4](./App_screenshots/29.png) |
 
 ---
-## 🚀 Features
-
-- **Splash Screen:** A visually captivating animated introduction screen.
-- **Home Page:** Displays the newest releases and featured books, dynamically fetched from the Google Books API.
-- **Book Details Page:** Provides detailed information about each book, along with a button to preview the book content.
-- **Search Page:** Empowers users to search for books by title, author, or keyword, integrating real-time results from the Google Books API.
-- **Loading Animations:** Smooth and consistent loading animations across all pages for a refined user experience.
-
----
 
 ## 🛠️ Technologies & Tools
 
@@ -39,6 +40,8 @@ BookNest is developed using modern technologies and best practices in mobile app
 - **Bloc Cubit:** For efficient state management using unidirectional data flow.
 - **MVVM (Model-View-ViewModel):** Clean architectural pattern for separation of concerns, ensuring maintainable code.
 - **Google Books API:** Provides book data and previews.
+
+----
 
 ### Key Packages
 
@@ -109,5 +112,5 @@ This project was designed and developed entirely by ***[Mark Magdy Shawky]***.
 
 For any inquiries, feel free to reach out:
 
-- **Email:** [markmarkmagdy@gmail.com](mailto:markmarkmagdy@gmail.com)
-- **LinkedIn:** [mark-magdy-02600923](https://linkedin.com/in/mark-magdy-02600923)
+- **Email:** [markmarkmagdy1010@gmail.com](mailto:markmarkmagdy@gmail.com)
+- **LinkedIn:** [mark-magdy-02600923](www.linkedin.com/in/mark-magdy-026009236)
