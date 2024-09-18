@@ -45,6 +45,7 @@ BookNest is developed using modern technologies and best practices in mobile app
 - **[Url_Launcher](https://pub.dev/packages/url_launcher):** Opens book previews in the user's default browser.
 - **[Equatable](https://pub.dev/packages/equatable):** Simplifies object equality comparisons, crucial for effective state management.
 - **[Cached_Network_Image](https://pub.dev/packages/cached_network_image):** Efficient image loading and caching for enhanced performance.
+- 
 
 ---
 
@@ -86,8 +87,23 @@ To set up the BookNest application locally, follow these steps:
 - Users can tap on any book for detailed information and click the "Preview" button to view the book.
 - The search page allows users to search for books using keywords, authors, or titles.
 
+----
+
 ## 👨‍💻 Architecture
 BookNest is designed using the MVVM architecture in combination with Bloc Cubit to manage state efficiently across the application. This ensures clear separation of logic, making the codebase maintainable, testable, and scalable for future enhancements.
 
+----
+
 ## 🛡️ License
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+----
+
+## 👤 Author
+
+This project was designed and developed entirely by ***[Mark Magdy Shawky]***.
+
+For any inquiries, feel free to reach out:
+
+- **Email:** [markmarkmagdy@gmail.com](mailto:markmarkmagdy@gmail.com)
+- **LinkedIn:** [mark-magdy-02600923](https://linkedin.com/in/mark-magdy-02600923)
