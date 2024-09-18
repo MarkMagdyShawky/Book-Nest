@@ -4,9 +4,9 @@
 |---------|---------|
 | ![Image 1](./App_screenshots/BookNest/30.jpg) | ![Image 2](./App_screenshots/BookNest/31.jpg) |
 
- Image 1 | Image 2 |
+ Image 3 | Image 4 |
 |---------|---------|
-| ![Image 1](./App_screenshots/book.jpg) | ![Image 2](./App_screenshots/search.jpg) |
+| ![Image 3](./App_screenshots/BookNest/28.jpg) | ![Image 4](./App_screenshots/BookNest/29.jpg) |
 
 
  ### BookNest appliction for Free Books Preview
