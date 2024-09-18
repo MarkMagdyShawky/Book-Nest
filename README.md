@@ -36,9 +36,9 @@ BookNest emphasizes an intuitive user journey by offering a splash screen, home 
 
 BookNest is developed using modern technologies and best practices in mobile application development, ensuring robustness and flexibility:
 
-- **Flutter:** The core framework for building beautiful UIs natively for Android and iOS.
+- **Flutter:** The core framework for building UIs.
 - **Bloc Cubit:** For efficient state management using unidirectional data flow.
-- **MVVM:** Clean architectural pattern for separation of concerns, ensuring maintainable code.
+- **MVVM:** Architectural pattern for separation of concerns, ensuring maintainable code.
 - **Google Books API:** Provides book data and previews.
 
 ----
