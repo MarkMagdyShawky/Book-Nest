@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./App_screenshots/magicBook.png" alt="Logo" width="40"/>
+  <img src="./App_screenshots/magicBook.png" alt="Logo" width="70"/>
   <h1>BookNest</h1>
 </div>
 
