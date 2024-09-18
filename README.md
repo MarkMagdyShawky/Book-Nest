@@ -1,5 +1,5 @@
 # BookNest 
-![Local Image](./App_screenshots/magicBook.png)
+<img src="./App_screenshots/magicBook.png" alt="Logo" width="30"/>
 
 **BookNest** is an elegant and high-performance mobile application built with Flutter, designed to provide users with seamless access to free book previews via the ***Google Books API***. The app delivers a smooth, visually appealing experience with clean architecture and animations for a dynamic user interface. 
 
