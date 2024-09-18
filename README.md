@@ -1,11 +1,22 @@
 # BookNest
 
-**BookNest** is an elegant and high-performance mobile application built with Flutter, designed to provide users with seamless access to free book previews via the Google Books API. The app delivers a smooth, visually appealing experience with clean architecture and animations for a dynamic user interface. 
+**BookNest** is an elegant and high-performance mobile application built with Flutter, designed to provide users with seamless access to free book previews via the ***Google Books API***. The app delivers a smooth, visually appealing experience with clean architecture and animations for a dynamic user interface. 
 
 BookNest emphasizes an intuitive user journey by offering a splash screen, home page featuring the latest and most popular books, detailed book pages, and an advanced search functionality. The application is structured using the **MVVM** design pattern, leveraging **Bloc Cubit** for state management to ensure scalability and maintainability.
 
 ---
 
+## 📸 Screenshots
+
+ Image 1 | Image 2 |
+|---------|---------|
+| ![Image 1](./App_screenshots/30.png) | ![Image 2](./App_screenshots/31.png) |
+
+ Image 3 | Image 4 |
+|---------|---------|
+| ![Image 3](./App_screenshots/28.png) | ![Image 4](./App_screenshots/29.png) |
+
+---
 ## 🚀 Features
 
 - **Splash Screen:** A visually captivating animated introduction screen.
@@ -41,26 +52,12 @@ BookNest is developed using modern technologies and best practices in mobile app
 
 BookNest uses a specific color palette to maintain a consistent and aesthetically pleasing user interface. Below are the primary colors used in the app:
 
-- **Primary Color:** `#FF5722` - Used for buttons and highlights.
-- **Secondary Color:** `#4CAF50` - Used for accents and indicators.
-- **Background Color:** `#FFFFFF` - Used for app backgrounds and cards.
-- **Text Color:** `#333333` - Primary text color for readability.
-- **Error Color:** `#F44336` - Used for error messages and alerts.
+- **Primary Color:** `#100B20` - Used for backgtound.
+- **Secondary Color:** `#2F004E` - Used for highlites.
+- **Button Color:** `#EF8262` - Used for app buttons.
+- **Text Color:** `#FFFFFF` - Primary text color for readability.
 
 Feel free to adjust these colors to fit your branding or design preferences.
-
----
-
-## 📸 Screenshots
-
- Image 1 | Image 2 |
-|---------|---------|
-| ![Image 1](./App_screenshots/30.png) | ![Image 2](./App_screenshots/31.png) |
-
- Image 3 | Image 4 |
-|---------|---------|
-| ![Image 3](./App_screenshots/28.png) | ![Image 4](./App_screenshots/29.png) |
----
 
 ---
 
