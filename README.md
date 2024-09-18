@@ -1,4 +1,5 @@
-# BookNest
+# BookNest 
+![Local Image](./App_screenshots/magicBook.png)
 
 **BookNest** is an elegant and high-performance mobile application built with Flutter, designed to provide users with seamless access to free book previews via the ***Google Books API***. The app delivers a smooth, visually appealing experience with clean architecture and animations for a dynamic user interface. 
 
@@ -38,14 +39,14 @@ BookNest is developed using modern technologies and best practices in mobile app
 
 ### Key Packages
 
-- **[Dio](https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png):** A powerful and flexible HTTP client for making API requests.
+- **[Dio](https://pub.dev/packages/dio):** A powerful and flexible HTTP client for making API requests.
 - **[Dartz](https://pub.dev/packages/dartz):** Facilitates functional programming paradigms, including error handling using `Either` and `Option`.
 - **[Get_it](https://pub.dev/packages/get_it):** Dependency injection to maintain clean code and decoupling.
 - **[Go_Router](https://pub.dev/packages/go_router):** Manages app routing with ease and efficiency.
 - **[Url_Launcher](https://pub.dev/packages/url_launcher):** Opens book previews in the user's default browser.
 - **[Equatable](https://pub.dev/packages/equatable):** Simplifies object equality comparisons, crucial for effective state management.
 - **[Cached_Network_Image](https://pub.dev/packages/cached_network_image):** Efficient image loading and caching for enhanced performance.
-- 
+  
 
 ---
 
