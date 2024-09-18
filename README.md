@@ -38,7 +38,7 @@ BookNest is developed using modern technologies and best practices in mobile app
 
 ### Key Packages
 
-- **[Dio](https://pub.dev/packages/dio)[](https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png):** A powerful and flexible HTTP client for making API requests.
+- **[Dio](https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png):** A powerful and flexible HTTP client for making API requests.
 - **[Dartz](https://pub.dev/packages/dartz):** Facilitates functional programming paradigms, including error handling using `Either` and `Option`.
 - **[Get_it](https://pub.dev/packages/get_it):** Dependency injection to maintain clean code and decoupling.
 - **[Go_Router](https://pub.dev/packages/go_router):** Manages app routing with ease and efficiency.
