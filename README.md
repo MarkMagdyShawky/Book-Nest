@@ -52,7 +52,8 @@ BookNest is developed using modern technologies and best practices in mobile app
 - **[Url_Launcher](https://pub.dev/packages/url_launcher):** Opens book previews in the user's default browser.
 - **[Equatable](https://pub.dev/packages/equatable):** Simplifies object equality comparisons, crucial for effective state management.
 - **[Cached_Network_Image](https://pub.dev/packages/cached_network_image):** Efficient image loading and caching for enhanced performance.
-  
+
+ <img src="./App_screenshots/BookNest/bookNestDepens.png" alt="Logo" width="80"/>
 
 ---
 
