@@ -54,7 +54,7 @@ BookNest is developed using modern technologies and best practices in mobile app
 - **[Cached_Network_Image](https://pub.dev/packages/cached_network_image):** Efficient image loading and caching for enhanced performance.
 
  <div align="center">
- <img src="./App_screenshots/bookNestDepens.png" alt="dependencies" width="200" height="230"/>
+ <img src="./App_screenshots/bookNestDepens.png" alt="dependencies" width="250" height="280"/>
 </div>
 
 ---
