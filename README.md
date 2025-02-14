@@ -114,4 +114,4 @@ This project was designed and developed entirely by ***[Mark Magdy Shawky]***.
 For any inquiries, feel free to reach out:
 
 - **Email:** [markmarkmagdy1010@gmail.com](mailto:markmarkmagdy@gmail.com)
-- **LinkedIn:** [mark-magdy](linkedin.com/in/mark-magdy-026009236)
+- **LinkedIn:** [mark-magdy](https://linkedin.com/in/mark-magdy-026009236)
